@@ -5,8 +5,10 @@ RUN apk -v --update add \
         groff \
         less \
         mailcap \
+        jq \
+        git \
         && \
-    pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
+    pip install --upgrade awscli==1.15.20 s3cmd==2.0.1 python-magic && \
     apk -v --purge del py-pip && \
     rm /var/cache/apk/*
 VOLUME /root/.aws

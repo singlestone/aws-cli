@@ -7,6 +7,7 @@ RUN apk -v --update add \
         mailcap \
         jq \
         git \
+        zip \
         && \
     pip install --upgrade awscli==1.15.20 s3cmd==2.0.1 python-magic && \
     apk -v --purge del py-pip && \
